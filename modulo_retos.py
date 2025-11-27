@@ -52,6 +52,10 @@ def anagrama(palabra1, palabra2):
             if i not in palabra2: # Buscamos cada letra de la palabra 1 en la palabra 2, si no la encontramos retornamos False
                 return False
         return True # Si llegamos aqui es que todas las letras de la palabra 1 estan en la palabra 2, retornamos True
+        # Podemos simplificar la funcion de la siguiente manera:
+        # return sorted(palabra1) == sorted(palabra2) la funcion sorted nos devuelve una lista ordenada 
+        # de los caracteres de la cadena, por lo que si ambas cadenas tienen los mismos caracteres en el 
+        # mismo orden, la funcion retornara True, caso contrario retornara False
     
 # Reto 3: Fibonacci
 
@@ -64,4 +68,30 @@ def fibonacci(rango):
         lista_fibonacci.append(lista_fibonacci[i] + lista_fibonacci[i + 1]) 
         # Sumamos los dos ultimos numeros de la lista y los agregamos a la lista
     return lista_fibonacci # Retornamos la lista con los numeros de la succesion de fibonacci
-    
+
+# Reto 4: Numero Primo
+
+# Un numero es primo si solo es divisible por 1 y por si mismo
+# Debemos crear una funcion que reciba un numero y nos devuelva True o False dependiendo si es primo o no
+
+def numero_primo(numero):
+    # El 1 no es numero primo, deben ser mayores que 1, si es 1 devolvemos False
+    if numero == 1:
+        return False
+    for i in range(2, numero): # Vamos recorriendo desde el 2 hasta el numero introducido para comprobar si es primo
+        if numero % i == 0: # Si el numero es divisible por alguno de los numeros del rango, retornamos False
+            return False
+    return True # Si llegamos aqui es que el numero es primo, retornamos True
+
+# Reto 5: Area de poligonos
+
+# Debemos crear una funcion que reciba el tipo de poligono y los valores de los lados
+# y nos devuelva el area del poligono
+
+def area(poligono, valor1, valor2):
+    if poligono == "triangulo":
+        return (valor1 * valor2) / 2
+    elif poligono == "cuadrado":
+        return valor1 * valor2
+    else:
+        return valor1 * valor2    
