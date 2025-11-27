@@ -95,3 +95,18 @@ def area(poligono, valor1, valor2):
         return valor1 * valor2
     else:
         return valor1 * valor2    
+
+
+# Reto 6: Inversion de cadenas de texto
+
+# Recibimos una cadena de texto como parametro y debemos devolver la cadena invertida
+
+def invertir_cadena(cadena):
+    cadena_invertida = "" # Creamos una cadena vacia para almacenar la cadena invertida
+    for i in cadena: # Recorremos la cadena
+        # Introducimos cada caracter delante del anterior, en el primer caso, ponemos "H" + "" = "H"
+        # En el segundo caso, a la cadena que tenemos "H" le añadimos "o" por delante, "o" + "H" = "oH"
+        # En el tercer caso, a la cadena que tenemos "oH" le añadimos "l" por delante, "l" + "oH" = "loH"
+        # Asi sucesivamente hasta llegar al final de la cadena.
+        cadena_invertida = i + cadena_invertida 
+    return cadena_invertida # Retornamos la cadena invertida

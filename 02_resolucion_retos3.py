@@ -3,6 +3,7 @@
 
 # Importamos area desde modulo_retos
 from modulo_retos import area
+from modulo_retos import invertir_cadena
 
 # Reto 5: 
 
@@ -57,5 +58,26 @@ elif poligono == "rectangulo":
     # Vamos a la funcion creada para comprobar el area de los poligonos
     area_rectangulo = area(poligono, base, altura)
     print(f"El area del rectangulo es: {area_rectangulo}")
+
+# Reto 6: 
+
+"""
+ 
+ * Inversion de cadenas de texto
+
+ * Crea un programa que invierta el orden de una cadena de texto
+ * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+ * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+
+"""
+
+# Debemos crear una funcion que reciba una cadena de texto y nos devuelva la cadena invertida
+# Recorremos la cadena de texto e introducimos en una nueva cadena de texto los valores invertidos
+# Para ello iremos introduciendo cada nuevo caracter delante del anterior
+
+cadena_a_comprobar = "Hola mundo" # La cadena dada
+
+cadena_invertida = invertir_cadena(cadena_a_comprobar)
+print(cadena_invertida)
 
     
