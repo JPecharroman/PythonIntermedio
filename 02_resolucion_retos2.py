@@ -54,3 +54,13 @@ if primo:
     print(f"El numero {numero_a_comprobar} es primo")
 else:
     print(f"El numero {numero_a_comprobar} no es primo")
+
+
+# Reto 4 Ampliado, comprobamos cuantos de los 100 primeros numeros enteros son primos.
+# Tenemos la funcion anterior que nos comprueba si un numero es primo o no, recorreremos el rango dado mirando si cada
+# uno de esos numeros es primo
+
+rango = range(2, 101) # Sabemos que el 1 no es numero primo por definicion, empezamos desde el 2.
+for i in rango:
+    if numero_primo(i):
+        print(f"El numero {i} es primo")
