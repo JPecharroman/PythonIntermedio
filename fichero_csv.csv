@@ -1,0 +1,15 @@
+nombre,apellidos,edad,email,genero,soltero
+
+Jorge,Perez,30,jorgeperez@gmail.com,Masculino,True
+
+Ana,Garcia,25,anagarcia@gmail.com,Femenino,False
+
+Luis,Rodriguez,28,luisrodriguez@gmail.com,Masculino,True
+
+Elena,Lopez,22,elenalopez@gmail.com,Femenino,False
+
+Pedro,Perez,38,pedroperez@gmail.com,Masculino,True
+
+Luisa,Hernandez,22,luisahernandez@gmail.com,Femenino,False
+
+Maria,Garcia,22,maria@gmail.com,Femenino,False

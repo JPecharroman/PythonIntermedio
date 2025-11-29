@@ -1,0 +1,20 @@
+[
+    {
+        "apellido": "Garcia",
+        "ciudad": "Madrid",
+        "edad": 30,
+        "estado_civil": "Soltero",
+        "nacional": true,
+        "nombre": "Jorge",
+        "trabajo": "Programador"
+    },
+    {
+        "nombre": "Ana",
+        "apellido": "Garcia",
+        "edad": 25,
+        "ciudad": "Madrid",
+        "trabajo": "Peluquera",
+        "estado_civil": "Soltera",
+        "nacional": true
+    }
+]
