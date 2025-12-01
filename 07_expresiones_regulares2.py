@@ -5,6 +5,8 @@ import re
 
 # Patrones personalizados de expresiones regulares
 # Un patron personalizado es un patron que se compone de varios patrones
+# Una web muy util para crear patrones personalizados es https://regex101.com/
+
 # Si escribimos entre corchetes [] varios caracteres, el patron buscado sera cualquiera de ellos
 # Por ejemplo, si escribimos [a-z], el patron buscado sera cualquier letra minuscula
 # Si escribimos [A-Z], el patron buscado sera cualquier letra mayuscula
@@ -118,7 +120,7 @@ numero = re.match(patron_expreg, tercer_email)
 print(numero) # Aqui vemos que match() nos devuelve el objeto, esto es, es un objeto que contiene la informacion de la coincidencia
 
 # Ver si una cadena pasada es un N.I.F. Valido, para ser un nif valido tiene que ser una cadena de 8 valores de tipo 0-9 seguidos de una letra de tipo a-zA-Z
-patron_expreg = r"[0-9]{8}[a-zA-Z]"
+patron_expreg = r"[0-9]{8}[a-zA-Z]{1}"
 nif_valido = "12345678J"
 nif_no_valido = "123456789K"
 numero = re.match(patron_expreg, nif_valido)
