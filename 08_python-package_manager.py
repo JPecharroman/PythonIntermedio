@@ -87,3 +87,12 @@ print(respuesta.content)
 # Podemos hallar el contenido de la respuesta en formato JSON con respuesta.json()
 print(respuesta.json())
 
+
+#### CREAMOS NUESTRO PRIMER PAQUETE ####
+# Vamos a crear nuestro primer paquete en python y para ello debemos definir nuestro __init__.py dentro de la carpeta miPrimerPaquete
+# Vamos a crear un archivo operaciones_aritmeticas.py dentro de la carpeta miPrimerPaquete y le decimos en __init__.py que importe las operaciones aritmeticas 
+# de operaciones_aritmeticas.py
+# Ahora debemos importar el modulo operaciones_aritmeticas del paquete miPrimerPaquete aqui para poder usarlo
+from miPrimerPaquete import operaciones_aritmeticas
+print(operaciones_aritmeticas.suma_dos_numeros(1, 2))
+
